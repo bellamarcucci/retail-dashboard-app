@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header><div class="header"><a href="ecommerce.html" style="color:white; font-family:var(--titleFamily)">Voltar</a></div></header>
+        
+        <main class="details-container">
+            <div id="product-detail-view">
+                </div>
+            
+            <div class="reviews-section">
+                <h3>Avaliações</h3>
+                <div id="reviews-list"></div>
+                
+                <form id="review-form">
+                    <h4>Deixe sua avaliação</h4>
+                    <select id="review-rating">
+                        <option value="5">5 Estrelas</option>
+                        <option value="4">4 Estrelas</option>
+                        <option value="3">3 Estrelas</option>
+                        <option value="2">2 Estrelas</option>
+                        <option value="1">1 Estrela</option>
+                    </select>
+                    <textarea id="review-comment" placeholder="Escreva seu comentário..." required></textarea>
+                    <button type="submit" class="btn-learn-more">Enviar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="details.js"></script>
+</body>
+</html>
