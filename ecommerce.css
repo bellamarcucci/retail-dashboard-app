@@ -5,17 +5,28 @@
     min-height: 80vh;
 }
 
+/* Desktop / padrão */
 .shop-layout {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.5rem;
+/* Imagem à esquerda */
+.shop-layout > img {
+  flex: 0 0 60%;
+  width: 60%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
 }
+
+/* Infos à direita */
+.shop-layout > div {
+  flex: 1;
+  min-width: 0; /* evita overflow em textos longos */
+}
+
 
 .product-card {
     border: 1px solid #ddd;
@@ -126,4 +137,42 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.back-btn {
+    margin-top: 10px;
+    position: absolute;
+    left: 6rem;   
+    color: var(--textColorClear);
+    font-family: var(--textFamily);
+    cursor: pointer;
+  
+}
+
+.back-btn a.btn-back-store {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--textColorClear);
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: var(--textFamily);
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.back-btn a.btn-back-store:hover {
+    color: #a1772d;
+}
+
+@media (max-width: 768px) {
+  .shop-layout {
+    flex-direction: column;
+  }
+
+  .shop-layout > img {
+    flex: none;
+    width: 100%;
+    max-height: 350px; /* opcional */
+  }
 }
