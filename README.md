@@ -1,64 +1,93 @@
-# Arkisanté Architecture - Responsive Website
+# Arkisanté Ecommerce and Admin Dashboard
 
-This project is the evolved, fully responsive version of the institutional website developed for MD Arkisanté Architecture. Building upon the initial concept, this version focuses on delivering a superior User Experience (UX), incorporating fluid animations, and ensuring complete compatibility across mobile, tablet, and desktop devices.
+This project represents an extended ecommerce experience developed for Arkisanté Architecture, combining a product catalog, shopping cart, product review system, and an administrative dashboard for stock and analytics management.
 
-The project remains built entirely with HTML and CSS, demonstrating advanced styling techniques without relying on JavaScript frameworks.
+The application is built with vanilla HTML, CSS, and JavaScript on the front end, and it relies on a separate backend server to provide product data, reviews, purchases, and inventory updates.
 
 ## Project Overview
 
-The purpose of this website is to:
+The purpose of this project is to:
 
-* Present the architecture office with a professional, high-end design
-* Provide a seamless browsing experience across all device sizes
-* Showcase the team and services through an interactive layout
-* Display a project gallery with optimized grid layouts
-* Function as a robust, static portfolio piece
+* Simulate a complete ecommerce flow integrated into an institutional architecture website
+* Allow users to browse products, view detailed project pages, and submit reviews
+* Manage a shopping cart with business rules and stock validation
+* Provide an admin dashboard with real time charts and inventory control
+* Demonstrate front end logic, state handling, and API integration using pure JavaScript
 
-All layout design, copywriting, and front-end development decisions were made to prioritize performance and visual hierarchy.
+This project focuses on usability, visual consistency, and realistic ecommerce behavior without the use of frameworks.
 
 ## Key Features
 
-* Fully Responsive Design: Layout adapts fluidly to Mobile, Tablet, and Desktop resolutions.
-* Enhanced UX: Improved navigation, smooth scrolling behavior, and clear call-to-actions.
-* Custom Animations: Usage of CSS Keyframes for subtle, organic visual effects (e.g., image breathing effects).
-* Interactive Components: Functional mobile hamburger menu and FAQ accordion built purely with CSS.
-* Special Pages: Includes a custom 404 Error page and a Contact section with accessible form styling.
+* Product Listing Page with dynamic rendering from API data
+* Product Details Page with image, description, stock status, and reviews
+* Star based Review System with visual interaction and persistence
+* Shopping Cart with localStorage state management
+* Business Rule enforcement for exclusive product categories
+* Admin Dashboard with analytics charts using Chart.js
+* Inventory Management with real time stock updates
+* Fully Responsive Layout for mobile, tablet, and desktop devices
 
-## Technologies and CSS Techniques
+## Technologies Used
 
-This project utilizes advanced CSS features to achieve a modern layout:
-
-* HTML5 (Semantic markup for better accessibility)
+* HTML5 with semantic structure
 * CSS3
-    * CSS Variables (:root) for consistent color and font management
-    * Flexbox for flexible alignment and navigation structure
-    * CSS Grid for complex layouts (Gallery, Team, and History sections)
-    * Media Queries for precise responsive breakpoints
-    * Keyframe Animations (@keyframes) for visual engagement
-    * Advanced Selectors (Sibling combinators and Attribute selectors)
-* Google Fonts (Montserrat, Playfair Display, and Jost)
-* Figma (Initial wireframing and layout planning)
+    * CSS Grid and Flexbox for layout
+    * Media Queries for responsive behavior
+    * Custom variables for colors and typography
+    * Component based styling for ecommerce and admin sections
+* JavaScript ES6
+    * Fetch API for server communication
+    * DOM manipulation and event handling
+    * LocalStorage for cart persistence
+* Chart.js for data visualization
+* Google Fonts and Material Symbols for UI consistency
+
+## Project Structure
+
+The project is divided into three main areas:
+
+* Ecommerce storefront
+    * Product listing
+    * Cart sidebar
+    * Checkout simulation
+* Product details
+    * Dynamic product rendering
+    * Review submission and display
+* Admin dashboard
+    * Sales sentiment visualization
+    * Stock per product charts
+    * Inventory management controls
+
+All data interactions depend on a backend API.
+
+## How to Run the Project
+
+This front end requires a backend server to function correctly.
+
+1. Clone or download this repository
+2. Clone and run the server from the separate repository:
+   https://github.com/bellamarcucci/retail-dashboard-app-server
+3. Start the backend server on localhost port 3000
+4. Open `ecommerce.html` or `admin.html` in your browser
+
+Without the server running, the application will display fallback messages and mock behavior.
 
 ## Author
 
-This project was exclusively designed and developed by:
+This project was designed and developed by:
 
 Isabella Marcucci
 
 Responsibilities and contributions:
-* Full UI/UX redesign for responsiveness
-* Implementation of CSS animations and transitions
-* Copywriting for all website content
-* Front-end development (HTML + CSS)
-* Visual structure, spacing, and component organization
 
-## How to Run the Project
-
-1. Clone or download this repository
-2. Open index.html directly in your browser
-3. No installations or dependencies are required
+* Front end architecture and implementation
+* Ecommerce logic and cart management
+* Product detail and review system
+* Admin dashboard layout and logic
+* API integration and error handling
+* Responsive design and UX decisions
 
 ## License
 
 This project is intended for educational and portfolio purposes only.
-The layout and content may not be redistributed or reused for commercial purposes without permission.
+The code and structure may not be reused for commercial applications without authorization.
