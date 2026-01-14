@@ -39,6 +39,10 @@ function renderSentimentChart(stats) {
                 data: [stats.positiveReviews, stats.negativeReviews],
                 backgroundColor: ['#4CAF50', '#F44336']
             }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
         }
     });
 }
@@ -67,6 +71,7 @@ function renderStockChart(products) {
         },
         options: { 
             responsive: true,
+            maintainAspectRatio: false,
             scales: { y: { beginAtZero: true } } 
         }
     });
